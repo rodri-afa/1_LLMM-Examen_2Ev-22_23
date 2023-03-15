@@ -20,7 +20,7 @@ Crear un div contenedor y en él, introducir cuatro elementos siguiendo las sigu
 
     <img src="./1_flexbox/flex_desktop.png" width="600" />
 
-  - En pantallas **menores** de `700px` disponer los elementos como en la imagen `flex_mobile`, haciendo que los 4 elementos de color gris oscuro tengan un **ancho máximo** de `300px`:
+  - En pantallas **menores** de `700px` disponer los elementos como en la imagen `flex_mobile`,  haciendo que los elementos 1, 2 y 3 de color gris oscuro tengan un **ancho máximo** de `300px`:
 
     <img src="./1_flexbox/flex_mobile.png" width="300" />
 
