@@ -3,3 +3,56 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+#container {
+    background-color: #c3c3c3;
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "i1 i3"
+        "i2 i3"
+        "i4 i3"
+
+    ;
+}
+
+.item {
+    background-color: #606060;
+    min-height: 100px;
+}
+
+.item:first-of-type {
+    grid-area: i1;
+}
+
+.item:nth-of-type(2) {
+    grid-area: i2
+}
+
+.item:nth-of-type(3) {
+    grid-area: i3
+}
+
+.item:nth-of-type(4) {
+    grid-area: i4
+}
+
+
+@media (min-width:700px) {
+    #container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas:
+            "i1 i1 i2"
+            "i3 i4 i4"
+        ;
+    }
+
+
+
+
+}
